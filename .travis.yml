@@ -12,7 +12,7 @@ after_success:
   - docker build -t antchi/multi-client ./client
   - docker build -t antchi/multi-server ./server
   - docker build -t antchi/multi-nginx ./nginx
-  - docker build -t antchi multi-worker ./worker
+  - docker build -t antchi/multi-worker ./worker
   # Log in to the docker CLI, command sends the password as argument to second command
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Take images and push to docker hub
